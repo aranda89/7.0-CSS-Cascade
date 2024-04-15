@@ -1,0 +1,28 @@
+Orders of priorities in CSS
+
+Position: 
+
+    * From Bottom to the Top, the last rule is the most important
+
+Specificity: 
+
+    *4 Element - Selector
+        |
+       3 -->Class - Selector
+            |
+           2 -->Attribute - Selector
+                    |
+                   1 -->Id - Selector
+
+<li id="first-id" class="first-class" draggable></li>
+
+Type:
+
+<link rel="stylesheet" href="./style.css"> - External 3
+<style></style> - Internal 2 
+<h1 style=" ">Hello</h1> - Inline (most important) 1
+
+Importance:
+
+color: red;
+color: green !important;
